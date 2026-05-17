@@ -1,7 +1,7 @@
 {
   "title": "Faithfulness Evaluation Methods in Imaging XAI",
-  "source": "Data transcribed from Tables 1-11 of Lamprou, Kallipolitis, Ntanos & Askounis, \"A Taxonomy of Faithfulness Evaluation Methods in Imaging XAI: A Systematic Review\" (2026). 107 review studies, 68 methods, 4 categories. references[] lists each method's defining work; full per-method review-study lists are in the paper's tables.",
-  "version": "1.0.0",
+  "source": "Data transcribed from Tables 1-11 of Lamprou, Kallipolitis, Ntanos & Askounis, \"A Taxonomy of Faithfulness Evaluation Methods in Imaging XAI: A Systematic Review\" (2026). 107 review studies, 68 methods, 4 categories. references[] lists each method's defining work with a URL (arXiv id from the paper where available, otherwise a Crossref-verified DOI, otherwise a Google Scholar title-search link); full per-method review-study lists remain in the paper's tables.",
+  "version": "1.1.0",
   "methods": [
     {
       "id": "pixel-flip",
@@ -15,7 +15,8 @@
       ],
       "references": [
         {
-          "text": "Bach et al. (2015)"
+          "text": "Bach et al. (2015)",
+          "url": "https://doi.org/10.1371/journal.pone.0130140"
         }
       ]
     },
@@ -31,7 +32,8 @@
       ],
       "references": [
         {
-          "text": "Dreyer et al. (2023)"
+          "text": "Dreyer et al. (2023)",
+          "url": "https://doi.org/10.1109/cvprw59228.2023.00397"
         }
       ]
     },
@@ -47,7 +49,8 @@
       ],
       "references": [
         {
-          "text": "Petsiuk et al. (2018)"
+          "text": "Petsiuk et al. (2018)",
+          "url": "https://arxiv.org/abs/1806.07421"
         }
       ]
     },
@@ -63,7 +66,8 @@
       ],
       "references": [
         {
-          "text": "Wu et al. (2024a)"
+          "text": "Wu et al. (2024a)",
+          "url": "https://doi.org/10.1109/cvpr52733.2024.01039"
         }
       ]
     },
@@ -79,7 +83,8 @@
       ],
       "references": [
         {
-          "text": "Gan et al. (2022)"
+          "text": "Gan et al. (2022)",
+          "url": "https://scholar.google.com/scholar?q=Is%20your%20explanation%20stable%3F%20A%20robustness%20evaluation%20framework%20for%20feature%20attribution"
         }
       ]
     },
@@ -95,7 +100,8 @@
       ],
       "references": [
         {
-          "text": "Nielsen et al. (2023)"
+          "text": "Nielsen et al. (2023)",
+          "url": "https://doi.org/10.1109/access.2023.3300242"
         }
       ]
     },
@@ -111,7 +117,8 @@
       ],
       "references": [
         {
-          "text": "Petsiuk et al. (2021)"
+          "text": "Petsiuk et al. (2021)",
+          "url": "https://doi.org/10.1109/cvpr46437.2021.01128"
         }
       ]
     },
@@ -127,7 +134,8 @@
       ],
       "references": [
         {
-          "text": "Yoshikawa et al. (2024)"
+          "text": "Yoshikawa et al. (2024)",
+          "url": "https://arxiv.org/abs/2405.14522"
         }
       ]
     },
@@ -143,7 +151,8 @@
       ],
       "references": [
         {
-          "text": "Kong et al. (2025)"
+          "text": "Kong et al. (2025)",
+          "url": "https://doi.org/10.1109/icassp49660.2025.10889772"
         }
       ]
     },
@@ -159,7 +168,8 @@
       ],
       "references": [
         {
-          "text": "Hasić (2025)"
+          "text": "Hasić (2025)",
+          "url": "https://scholar.google.com/scholar?q=Towards%20explainable%20image%20classification"
         }
       ]
     },
@@ -175,7 +185,8 @@
       ],
       "references": [
         {
-          "text": "Ghorbani et al. (2019)"
+          "text": "Ghorbani et al. (2019)",
+          "url": "https://scholar.google.com/scholar?q=Towards%20automatic%20concept-based%20explanations"
         }
       ]
     },
@@ -191,7 +202,8 @@
       ],
       "references": [
         {
-          "text": "Samek et al. (2016)"
+          "text": "Samek et al. (2016)",
+          "url": "https://doi.org/10.1109/tnnls.2016.2599820"
         }
       ]
     },
@@ -207,7 +219,8 @@
       ],
       "references": [
         {
-          "text": "Samek et al. (2016)"
+          "text": "Samek et al. (2016)",
+          "url": "https://doi.org/10.1109/tnnls.2016.2599820"
         }
       ]
     },
@@ -223,7 +236,8 @@
       ],
       "references": [
         {
-          "text": "DeYoung et al. (2020)"
+          "text": "DeYoung et al. (2020)",
+          "url": "https://doi.org/10.18653/v1/2020.acl-main.408"
         }
       ]
     },
@@ -239,7 +253,8 @@
       ],
       "references": [
         {
-          "text": "Hooker et al. (2019)"
+          "text": "Hooker et al. (2019)",
+          "url": "https://scholar.google.com/scholar?q=A%20benchmark%20for%20interpretability%20methods%20in%20deep%20neural%20networks"
         }
       ]
     },
@@ -255,7 +270,8 @@
       ],
       "references": [
         {
-          "text": "Rong et al. (2022)"
+          "text": "Rong et al. (2022)",
+          "url": "https://arxiv.org/abs/2202.00449"
         }
       ]
     },
@@ -271,7 +287,8 @@
       ],
       "references": [
         {
-          "text": "Rieger and Hansen (2020)"
+          "text": "Rieger and Hansen (2020)",
+          "url": "https://arxiv.org/abs/2003.08747"
         }
       ]
     },
@@ -287,7 +304,8 @@
       ],
       "references": [
         {
-          "text": "Wu et al. (2024b)"
+          "text": "Wu et al. (2024b)",
+          "url": "https://doi.org/10.1109/cvpr52733.2024.01040"
         }
       ]
     },
@@ -303,7 +321,8 @@
       ],
       "references": [
         {
-          "text": "Chattopadhay et al. (2018)"
+          "text": "Chattopadhay et al. (2018)",
+          "url": "https://doi.org/10.1109/wacv.2018.00097"
         }
       ]
     },
@@ -319,7 +338,8 @@
       ],
       "references": [
         {
-          "text": "Guo et al. (2023)"
+          "text": "Guo et al. (2023)",
+          "url": "https://doi.org/10.1016/j.jag.2023.103244"
         }
       ]
     },
@@ -335,7 +355,8 @@
       ],
       "references": [
         {
-          "text": "Jung and Oh (2021)"
+          "text": "Jung and Oh (2021)",
+          "url": "https://doi.org/10.1109/iccv48922.2021.00137"
         }
       ]
     },
@@ -351,7 +372,8 @@
       ],
       "references": [
         {
-          "text": "Sujana and Augustine (2025)"
+          "text": "Sujana and Augustine (2025)",
+          "url": "https://doi.org/10.1016/j.brainres.2025.149904"
         }
       ]
     },
@@ -367,7 +389,8 @@
       ],
       "references": [
         {
-          "text": "Rodrigues et al. (2024)"
+          "text": "Rodrigues et al. (2024)",
+          "url": "https://doi.org/10.1016/j.ins.2024.120159"
         }
       ]
     },
@@ -383,7 +406,8 @@
       ],
       "references": [
         {
-          "text": "Kumar et al. (2021)"
+          "text": "Kumar et al. (2021)",
+          "url": "https://doi.org/10.1109/tai.2021.3111138"
         }
       ]
     },
@@ -399,7 +423,8 @@
       ],
       "references": [
         {
-          "text": "Qian et al. (2025b)"
+          "text": "Qian et al. (2025b)",
+          "url": "https://doi.org/10.2478/jaiscr-2025-0013"
         }
       ]
     },
@@ -415,7 +440,8 @@
       ],
       "references": [
         {
-          "text": "Zheng et al. (2024)"
+          "text": "Zheng et al. (2024)",
+          "url": "https://arxiv.org/abs/2410.02970"
         }
       ]
     },
@@ -431,7 +457,8 @@
       ],
       "references": [
         {
-          "text": "Alvarez Melis and Jaakkola (2018)"
+          "text": "Alvarez Melis and Jaakkola (2018)",
+          "url": "https://arxiv.org/abs/1806.08049"
         }
       ]
     },
@@ -447,7 +474,8 @@
       ],
       "references": [
         {
-          "text": "Selvaraju et al. (2017)"
+          "text": "Selvaraju et al. (2017)",
+          "url": "https://doi.org/10.1109/iccv.2017.74"
         }
       ]
     },
@@ -463,7 +491,8 @@
       ],
       "references": [
         {
-          "text": "Gomez et al. (2022)"
+          "text": "Gomez et al. (2022)",
+          "url": "https://doi.org/10.1142/9789811289125_0004"
         }
       ]
     },
@@ -479,7 +508,8 @@
       ],
       "references": [
         {
-          "text": "Bhatt et al. (2020)"
+          "text": "Bhatt et al. (2020)",
+          "url": "https://arxiv.org/abs/2005.00631"
         }
       ]
     },
@@ -495,7 +525,8 @@
       ],
       "references": [
         {
-          "text": "Yeh et al. (2019)"
+          "text": "Yeh et al. (2019)",
+          "url": "https://scholar.google.com/scholar?q=On%20the%20%28in%29fidelity%20and%20sensitivity%20of%20explanations"
         }
       ]
     },
@@ -511,7 +542,8 @@
       ],
       "references": [
         {
-          "text": "Hedström et al. (2025)"
+          "text": "Hedström et al. (2025)",
+          "url": "https://scholar.google.com/scholar?q=Evaluating%20interpretable%20methods%20via%20geometric%20alignment%20of%20functional%20distortions"
         }
       ]
     },
@@ -527,7 +559,8 @@
       ],
       "references": [
         {
-          "text": "He et al. (2023)"
+          "text": "He et al. (2023)",
+          "url": "https://doi.org/10.1145/3576915.3616605"
         }
       ]
     },
@@ -543,7 +576,8 @@
       ],
       "references": [
         {
-          "text": "He et al. (2023)"
+          "text": "He et al. (2023)",
+          "url": "https://doi.org/10.1145/3576915.3616605"
         }
       ]
     },
@@ -559,7 +593,8 @@
       ],
       "references": [
         {
-          "text": "He et al. (2023)"
+          "text": "He et al. (2023)",
+          "url": "https://doi.org/10.1145/3576915.3616605"
         }
       ]
     },
@@ -575,7 +610,8 @@
       ],
       "references": [
         {
-          "text": "Li et al. (2021)"
+          "text": "Li et al. (2021)",
+          "url": "https://doi.org/10.1145/3474085.3475337"
         }
       ]
     },
@@ -591,7 +627,8 @@
       ],
       "references": [
         {
-          "text": "Zhang et al. (2021)"
+          "text": "Zhang et al. (2021)",
+          "url": "https://doi.org/10.1609/aaai.v35i13.17389"
         }
       ]
     },
@@ -607,7 +644,8 @@
       ],
       "references": [
         {
-          "text": "Zhang et al. (2021)"
+          "text": "Zhang et al. (2021)",
+          "url": "https://doi.org/10.1609/aaai.v35i13.17389"
         }
       ]
     },
@@ -623,7 +661,8 @@
       ],
       "references": [
         {
-          "text": "Qi et al. (2021)"
+          "text": "Qi et al. (2021)",
+          "url": "https://doi.org/10.1016/j.artint.2020.103435"
         }
       ]
     },
@@ -639,7 +678,8 @@
       ],
       "references": [
         {
-          "text": "Akpudo et al. (2024)"
+          "text": "Akpudo et al. (2024)",
+          "url": "https://doi.org/10.1109/icme57554.2024.10687699"
         }
       ]
     },
@@ -655,7 +695,8 @@
       ],
       "references": [
         {
-          "text": "Wang et al. (2024)"
+          "text": "Wang et al. (2024)",
+          "url": "https://arxiv.org/abs/2406.12649"
         }
       ]
     },
@@ -671,7 +712,8 @@
       ],
       "references": [
         {
-          "text": "Zhou et al. (2016)"
+          "text": "Zhou et al. (2016)",
+          "url": "https://doi.org/10.1109/cvpr.2016.319"
         }
       ]
     },
@@ -687,7 +729,8 @@
       ],
       "references": [
         {
-          "text": "Selvaraju et al. (2017)"
+          "text": "Selvaraju et al. (2017)",
+          "url": "https://doi.org/10.1109/iccv.2017.74"
         }
       ]
     },
@@ -703,7 +746,8 @@
       ],
       "references": [
         {
-          "text": "Draelos and Carin (2020)"
+          "text": "Draelos and Carin (2020)",
+          "url": "https://arxiv.org/abs/2011.08891"
         }
       ]
     },
@@ -719,7 +763,8 @@
       ],
       "references": [
         {
-          "text": "Draelos and Carin (2020)"
+          "text": "Draelos and Carin (2020)",
+          "url": "https://arxiv.org/abs/2011.08891"
         }
       ]
     },
@@ -735,7 +780,8 @@
       ],
       "references": [
         {
-          "text": "Draelos and Carin (2022)"
+          "text": "Draelos and Carin (2022)",
+          "url": "https://doi.org/10.1016/j.artmed.2022.102372"
         }
       ]
     },
@@ -751,7 +797,8 @@
       ],
       "references": [
         {
-          "text": "Achtibat et al. (2024)"
+          "text": "Achtibat et al. (2024)",
+          "url": "https://arxiv.org/abs/2402.05602"
         }
       ]
     },
@@ -767,7 +814,8 @@
       ],
       "references": [
         {
-          "text": "Zhou et al. (2018)"
+          "text": "Zhou et al. (2018)",
+          "url": "https://doi.org/10.1007/978-3-030-01237-3_8"
         }
       ]
     },
@@ -783,7 +831,8 @@
       ],
       "references": [
         {
-          "text": "Tan et al. (2024)"
+          "text": "Tan et al. (2024)",
+          "url": "https://arxiv.org/abs/2406.03421"
         }
       ]
     },
@@ -799,7 +848,8 @@
       ],
       "references": [
         {
-          "text": "Yeh et al. (2019)"
+          "text": "Yeh et al. (2019)",
+          "url": "https://scholar.google.com/scholar?q=On%20the%20%28in%29fidelity%20and%20sensitivity%20of%20explanations"
         }
       ]
     },
@@ -815,7 +865,8 @@
       ],
       "references": [
         {
-          "text": "Amorim et al. (2023)"
+          "text": "Amorim et al. (2023)",
+          "url": "https://doi.org/10.1016/j.ipm.2022.103225"
         }
       ]
     },
@@ -831,7 +882,8 @@
       ],
       "references": [
         {
-          "text": "Dakhli and Barhoumi (2024)"
+          "text": "Dakhli and Barhoumi (2024)",
+          "url": "https://doi.org/10.1109/aiccsa63423.2024.10912611"
         }
       ]
     },
@@ -847,7 +899,8 @@
       ],
       "references": [
         {
-          "text": "Vukadin et al. (2024a)"
+          "text": "Vukadin et al. (2024a)",
+          "url": "https://doi.org/10.1145/3649458"
         }
       ]
     },
@@ -863,7 +916,8 @@
       ],
       "references": [
         {
-          "text": "Adebayo et al. (2018)"
+          "text": "Adebayo et al. (2018)",
+          "url": "https://scholar.google.com/scholar?q=Sanity+checks+for+saliency+maps"
         }
       ]
     },
@@ -879,7 +933,8 @@
       ],
       "references": [
         {
-          "text": "Hedström et al. (2024)"
+          "text": "Hedström et al. (2024)",
+          "url": "https://doi.org/10.1007/978-3-031-63787-2_21"
         }
       ]
     },
@@ -895,7 +950,8 @@
       ],
       "references": [
         {
-          "text": "Hedström et al. (2024)"
+          "text": "Hedström et al. (2024)",
+          "url": "https://doi.org/10.1007/978-3-031-63787-2_21"
         }
       ]
     },
@@ -911,7 +967,8 @@
       ],
       "references": [
         {
-          "text": "Sixt et al. (2020)"
+          "text": "Sixt et al. (2020)",
+          "url": "https://scholar.google.com/scholar?q=When%20explanations%20lie%3A%20Why%20many%20modified%20BP%20attributions%20fail"
         }
       ]
     },
@@ -927,7 +984,8 @@
       ],
       "references": [
         {
-          "text": "Zhang et al. (2018)"
+          "text": "Zhang et al. (2018)",
+          "url": "https://doi.org/10.1007/s11263-017-1059-x"
         }
       ]
     },
@@ -943,7 +1001,8 @@
       ],
       "references": [
         {
-          "text": "Bohle et al. (2021)"
+          "text": "Bohle et al. (2021)",
+          "url": "https://doi.org/10.1109/cvpr46437.2021.00990"
         }
       ]
     },
@@ -959,7 +1018,8 @@
       ],
       "references": [
         {
-          "text": "Rao et al. (2022)"
+          "text": "Rao et al. (2022)",
+          "url": "https://doi.org/10.1109/cvpr52688.2022.00998"
         }
       ]
     },
@@ -975,7 +1035,8 @@
       ],
       "references": [
         {
-          "text": "Rao et al. (2022)"
+          "text": "Rao et al. (2022)",
+          "url": "https://doi.org/10.1109/cvpr52688.2022.00998"
         }
       ]
     },
@@ -991,7 +1052,8 @@
       ],
       "references": [
         {
-          "text": "Arias-Duart et al. (2023)"
+          "text": "Arias-Duart et al. (2023)",
+          "url": "https://doi.org/10.1109/cvprw59228.2023.00380"
         }
       ]
     },
@@ -1007,7 +1069,8 @@
       ],
       "references": [
         {
-          "text": "Ribeiro et al. (2016)"
+          "text": "Ribeiro et al. (2016)",
+          "url": "https://doi.org/10.18653/v1/n16-3020"
         }
       ]
     },
@@ -1023,7 +1086,8 @@
       ],
       "references": [
         {
-          "text": "Saini and Prasad (2022)"
+          "text": "Saini and Prasad (2022)",
+          "url": "https://doi.org/10.1145/3514094.3534191"
         }
       ]
     },
@@ -1039,7 +1103,8 @@
       ],
       "references": [
         {
-          "text": "Saleem et al. (2025)"
+          "text": "Saleem et al. (2025)",
+          "url": "https://doi.org/10.1007/s10618-025-01154-y"
         }
       ]
     },
@@ -1055,7 +1120,8 @@
       ],
       "references": [
         {
-          "text": "Qi et al. (2021)"
+          "text": "Qi et al. (2021)",
+          "url": "https://doi.org/10.1016/j.artint.2020.103435"
         }
       ]
     },
@@ -1071,7 +1137,8 @@
       ],
       "references": [
         {
-          "text": "Kamakshi et al. (2021)"
+          "text": "Kamakshi et al. (2021)",
+          "url": "https://doi.org/10.1109/ijcnn52387.2021.9534369"
         }
       ]
     },
@@ -1087,7 +1154,8 @@
       ],
       "references": [
         {
-          "text": "Jung et al. (2021)"
+          "text": "Jung et al. (2021)",
+          "url": "https://doi.org/10.1007/978-3-030-68796-0_6"
         }
       ]
     }
