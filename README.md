@@ -9,17 +9,13 @@ Lamprou, Kallipolitis, Ntanos & Askounis (2026).
 The site lets you browse all 68 methods grouped by category, with full-text
 search and category filtering.
 
-**Live URL:** <https://nasskall.github.io/xai-faithfulness-taxonomy/>
+**Live site:** <https://nasskall.github.io/xai-faithfulness-taxonomy/> — **live now.**
 
-> ⚠️ **Availability:** the live site is published via GitHub Pages **only while
-> this repository is public**. The repository is **currently private** (GitHub
-> Pages does not serve private repositories on the Free plan), so the URL above
-> currently returns **404**. To view the interactive taxonomy you can either:
->
-> 1. **Run it locally** (works regardless of repo visibility) — see
->    [Local preview](#local-preview) below; or
-> 2. **Make the repository public** — pushing to `main` then redeploys the site
->    and the URL above goes live.
+> ℹ️ The site is served by GitHub Pages from this repository. On the GitHub
+> Free plan Pages only serves **public** repositories, so the live URL works as
+> long as this repository stays public; if it is made private again the URL
+> returns 404 until it is public once more. You can always run it locally
+> regardless of visibility — see [Local preview](#local-preview).
 
 ## The paper
 
@@ -160,9 +156,10 @@ repository root as a Pages artifact and deploys it. This requires:
 2. Pages configured with **GitHub Actions** as the source (Settings → Pages →
    Source: *GitHub Actions*).
 
-While the repository is private the workflow still runs on each push but the
-deployment step fails by design, and <https://nasskall.github.io/xai-faithfulness-taxonomy/>
-returns 404. Making the repository public (then pushing) brings the site live.
+The repository is currently **public** and the site is live at
+<https://nasskall.github.io/xai-faithfulness-taxonomy/>. If the repository is
+made private again, the workflow still runs on each push but the deployment
+step fails by design and the URL returns 404 until it is public once more.
 
 ## License
 
