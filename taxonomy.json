@@ -1,6 +1,1095 @@
 {
   "title": "Faithfulness Evaluation Methods in Imaging XAI",
-  "source": "Companion site to Lamprou et al. (2026). Bibliographic details to be completed by the maintainer.",
-  "version": "0.1.0",
-  "methods": []
+  "source": "Data transcribed from Tables 1-11 of Lamprou, Kallipolitis, Ntanos & Askounis, \"A Taxonomy of Faithfulness Evaluation Methods in Imaging XAI: A Systematic Review\" (2026). 107 review studies, 68 methods, 4 categories. references[] lists each method's defining work; full per-method review-study lists are in the paper's tables.",
+  "version": "1.0.0",
+  "methods": [
+    {
+      "id": "pixel-flip",
+      "name": "Pixel-flip",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Progressively perturbs image pixels in decreasing attribution order. Computation: Perturbation curve.",
+      "tags": [
+        "I.A.1",
+        "Perturbation curve"
+      ],
+      "references": [
+        {
+          "text": "Bach et al. (2015)"
+        }
+      ]
+    },
+    {
+      "id": "concept-flipping-insertion",
+      "name": "Concept Flipping / Concept Insertion",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Concept-level analogue of pixel-flip: concepts are progressively removed or inserted according to their importance. Computation: Perturbation curve.",
+      "tags": [
+        "I.A.1",
+        "Perturbation curve"
+      ],
+      "references": [
+        {
+          "text": "Dreyer et al. (2023)"
+        }
+      ]
+    },
+    {
+      "id": "deletion-insertion",
+      "name": "Deletion / Insertion",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Important pixels are progressively removed (Deletion) or added (Insertion); faithfulness read from the area under the prediction curve. Computation: AUC.",
+      "tags": [
+        "I.A.1",
+        "AUC"
+      ],
+      "references": [
+        {
+          "text": "Petsiuk et al. (2018)"
+        }
+      ]
+    },
+    {
+      "id": "wu-2024a-ascending-deletion",
+      "name": "Ascending-order Deletion (Wu et al. 2024a)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Deletion variant where pixels are removed in ascending order of importance. Computation: AUC.",
+      "tags": [
+        "I.A.1",
+        "AUC"
+      ],
+      "references": [
+        {
+          "text": "Wu et al. (2024a)"
+        }
+      ]
+    },
+    {
+      "id": "rd-ri",
+      "name": "RD / RI",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Robust Deletion/Insertion variants that compute expected metric scores over perturbed image neighborhoods. Computation: Expected value & AUC.",
+      "tags": [
+        "I.A.1",
+        "Expected value & AUC"
+      ],
+      "references": [
+        {
+          "text": "Gan et al. (2022)"
+        }
+      ]
+    },
+    {
+      "id": "evalattai",
+      "name": "EvalAttAI",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Continuous perturbation scheme where the image is iteratively modified using the attribution map itself. Computation: AUC.",
+      "tags": [
+        "I.A.1",
+        "AUC"
+      ],
+      "references": [
+        {
+          "text": "Nielsen et al. (2023)"
+        }
+      ]
+    },
+    {
+      "id": "petsiuk-2021-detection",
+      "name": "Deletion for object detection (Petsiuk et al. 2021)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "The Deletion metric extended to the object-detection task. Computation: AUC.",
+      "tags": [
+        "I.A.1",
+        "AUC"
+      ],
+      "references": [
+        {
+          "text": "Petsiuk et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "yoshikawa-2024-superpixel",
+      "name": "Superpixel Deletion/Insertion (Yoshikawa et al. 2024)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Deletion/Insertion extended to superpixels. Computation: AUC.",
+      "tags": [
+        "I.A.1",
+        "AUC"
+      ],
+      "references": [
+        {
+          "text": "Yoshikawa et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "effect-score",
+      "name": "Effect Score",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Deletion/Insertion-based score that penalizes large superpixel explanations. Computation: Weighted mix of Deletion & Insertion.",
+      "tags": [
+        "I.A.1",
+        "Weighted mix of Deletion & Insertion"
+      ],
+      "references": [
+        {
+          "text": "Kong et al. (2025)"
+        }
+      ]
+    },
+    {
+      "id": "hasic-2025-concept",
+      "name": "Concept-level Deletion/Insertion (Hasić 2025)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Deletion/Insertion extended to concept-level explanations. Computation: AUC.",
+      "tags": [
+        "I.A.1",
+        "AUC"
+      ],
+      "references": [
+        {
+          "text": "Hasić (2025)"
+        }
+      ]
+    },
+    {
+      "id": "sdc-ssc",
+      "name": "SDC / SSC",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Identifies the minimal set of concepts that destroys (SDC) or sustains (SSC) a prediction. Computation: Minimum number of concepts satisfying a condition.",
+      "tags": [
+        "I.A.1",
+        "Minimum number of concepts satisfying a condition"
+      ],
+      "references": [
+        {
+          "text": "Ghorbani et al. (2019)"
+        }
+      ]
+    },
+    {
+      "id": "aopc",
+      "name": "AOPC",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Measures cumulative prediction change along MoRF/LeRF perturbation curves. Computation: AOPC.",
+      "tags": [
+        "I.A.1",
+        "AOPC"
+      ],
+      "references": [
+        {
+          "text": "Samek et al. (2016)"
+        }
+      ]
+    },
+    {
+      "id": "abpc",
+      "name": "ABPC",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Measures the area between the MoRF and LeRF perturbation curves. Computation: AOPC.",
+      "tags": [
+        "I.A.1",
+        "AOPC"
+      ],
+      "references": [
+        {
+          "text": "Samek et al. (2016)"
+        }
+      ]
+    },
+    {
+      "id": "comprehensiveness-sufficiency",
+      "name": "Comprehensiveness / Sufficiency",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Measures cumulative prediction change when removing or retaining the top-ranked regions. Computation: AOPC.",
+      "tags": [
+        "I.A.1",
+        "AOPC"
+      ],
+      "references": [
+        {
+          "text": "DeYoung et al. (2020)"
+        }
+      ]
+    },
+    {
+      "id": "roar",
+      "name": "ROAR",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "AOPC variant that retrains the model on explanation-guided modified images to address the OOD issue. Computation: AOPC.",
+      "tags": [
+        "I.A.1",
+        "AOPC"
+      ],
+      "references": [
+        {
+          "text": "Hooker et al. (2019)"
+        }
+      ]
+    },
+    {
+      "id": "road",
+      "name": "ROAD",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "AOPC variant employing Noisy Linear Imputation (NLI) perturbations to mitigate class information leakage. Computation: AOPC.",
+      "tags": [
+        "I.A.1",
+        "AOPC"
+      ],
+      "references": [
+        {
+          "text": "Rong et al. (2022)"
+        }
+      ]
+    },
+    {
+      "id": "irof",
+      "name": "IROF",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "AOPC variant employing a segmentation algorithm to partition images into regions. Computation: AOPC.",
+      "tags": [
+        "I.A.1",
+        "AOPC"
+      ],
+      "references": [
+        {
+          "text": "Rieger and Hansen (2020)"
+        }
+      ]
+    },
+    {
+      "id": "saco",
+      "name": "SaCo",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.1 — Multi-step prediction metrics",
+      "description": "Pairwise region comparison that evaluates whether higher-saliency regions cause larger confidence drops. Computation: Normalized aggregation of salience score differences.",
+      "tags": [
+        "I.A.1",
+        "Normalized aggregation of salience score differences"
+      ],
+      "references": [
+        {
+          "text": "Wu et al. (2024b)"
+        }
+      ]
+    },
+    {
+      "id": "ad-ic",
+      "name": "AD / IC",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.2 — Single-step prediction metrics",
+      "description": "Compares predictions on the original image and the explanation mask: AD = confidence drop (floored at zero), IC = whether the explanation map increases prediction confidence. Computation: Confidence score comparison.",
+      "tags": [
+        "I.A.2",
+        "Confidence score comparison"
+      ],
+      "references": [
+        {
+          "text": "Chattopadhay et al. (2018)"
+        }
+      ]
+    },
+    {
+      "id": "ad-ic-p",
+      "name": "ADₚ / ICₚ",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.2 — Single-step prediction metrics",
+      "description": "AD/IC variants scaled by the percentage of clean pixels to account for explanation sparsity. Computation: Confidence score comparison.",
+      "tags": [
+        "I.A.2",
+        "Confidence score comparison"
+      ],
+      "references": [
+        {
+          "text": "Guo et al. (2023)"
+        }
+      ]
+    },
+    {
+      "id": "add",
+      "name": "ADD",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.2 — Single-step prediction metrics",
+      "description": "AD variant that measures the confidence drop after deleting the most influential region. Computation: Confidence score comparison.",
+      "tags": [
+        "I.A.2",
+        "Confidence score comparison"
+      ],
+      "references": [
+        {
+          "text": "Jung and Oh (2021)"
+        }
+      ]
+    },
+    {
+      "id": "sujana-2025-pixel",
+      "name": "Pixel removal from original (Sujana & Augustine 2025)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.2 — Single-step prediction metrics",
+      "description": "Removes the most-important pixels from the original image at once. Computation: Confidence score comparison.",
+      "tags": [
+        "I.A.2",
+        "Confidence score comparison"
+      ],
+      "references": [
+        {
+          "text": "Sujana and Augustine (2025)"
+        }
+      ]
+    },
+    {
+      "id": "rodrigues-2024-superpixel",
+      "name": "Superpixel removal from original (Rodrigues et al. 2024)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.2 — Single-step prediction metrics",
+      "description": "Removes the most-important superpixels from the original image at once. Computation: Confidence score comparison.",
+      "tags": [
+        "I.A.2",
+        "Confidence score comparison"
+      ],
+      "references": [
+        {
+          "text": "Rodrigues et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "kumar-2021-concept",
+      "name": "Concept removal from original (Kumar et al. 2021)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.2 — Single-step prediction metrics",
+      "description": "Removes the most-important concepts from the original image at once. Computation: Confidence score comparison.",
+      "tags": [
+        "I.A.2",
+        "Confidence score comparison"
+      ],
+      "references": [
+        {
+          "text": "Kumar et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "qian-2025b",
+      "name": "Irrelevant-superpixel removal (Qian et al. 2025b)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.2 — Single-step prediction metrics",
+      "description": "Removes superpixels deemed irrelevant by the explanation; the remaining image is expected to maintain or increase classifier confidence (aligns with the IC criterion). Computation: Confidence score comparison.",
+      "tags": [
+        "I.A.2",
+        "Confidence score comparison"
+      ],
+      "references": [
+        {
+          "text": "Qian et al. (2025b)"
+        }
+      ]
+    },
+    {
+      "id": "f-fidelity",
+      "name": "F-Fidelity",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.A.2 — Single-step prediction metrics",
+      "description": "Performs model retraining on explanation-agnostic masked images and explanation-guided pixel removal at evaluation to mitigate the OOD issue. Computation: Predicted label comparison.",
+      "tags": [
+        "I.A.2",
+        "Predicted label comparison"
+      ],
+      "references": [
+        {
+          "text": "Zheng et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "fe",
+      "name": "FE (Faithfulness Estimate)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Correlation between attribution scores and the prediction drop after removing pixels. Computation: PCC.",
+      "tags": [
+        "I.B",
+        "PCC"
+      ],
+      "references": [
+        {
+          "text": "Alvarez Melis and Jaakkola (2018)"
+        }
+      ]
+    },
+    {
+      "id": "fe-srcc",
+      "name": "FE (SRCC variant)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "FE variant using Spearman rank correlation instead of Pearson correlation. Computation: SRCC.",
+      "tags": [
+        "I.B",
+        "SRCC"
+      ],
+      "references": [
+        {
+          "text": "Selvaraju et al. (2017)"
+        }
+      ]
+    },
+    {
+      "id": "dc-ic-corr",
+      "name": "DCᴄᴏᵣᵣ / ICᴄᴏᵣᵣ",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Correlation-based variants of the Deletion and Insertion measures. Computation: PCC.",
+      "tags": [
+        "I.B",
+        "PCC"
+      ],
+      "references": [
+        {
+          "text": "Gomez et al. (2022)"
+        }
+      ]
+    },
+    {
+      "id": "fc",
+      "name": "FC (Faithfulness Correlation)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Correlation between the sum of attribution scores over perturbed feature subsets and the corresponding changes in model output. Computation: PCC.",
+      "tags": [
+        "I.B",
+        "PCC"
+      ],
+      "references": [
+        {
+          "text": "Bhatt et al. (2020)"
+        }
+      ]
+    },
+    {
+      "id": "infidelity",
+      "name": "Infidelity",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Mean distance between the sum of attribution scores over perturbed feature subsets and the corresponding changes in model output. Computation: Expected value.",
+      "tags": [
+        "I.B",
+        "Expected value"
+      ],
+      "references": [
+        {
+          "text": "Yeh et al. (2019)"
+        }
+      ]
+    },
+    {
+      "id": "gef",
+      "name": "GEF (Generalized Explanation Faithfulness)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Geometry-aware correlation between model and explanation distortion vectors under model-parameter perturbations. Computation: SRCC.",
+      "tags": [
+        "I.B",
+        "SRCC"
+      ],
+      "references": [
+        {
+          "text": "Hedström et al. (2025)"
+        }
+      ]
+    },
+    {
+      "id": "embt",
+      "name": "EMBT (Evolving Model Backdoor Test)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Correlation between model prediction and attribution assigned to a trigger region across a sequence of progressively backdoor-trained models. Computation: PCC.",
+      "tags": [
+        "I.B",
+        "PCC"
+      ],
+      "references": [
+        {
+          "text": "He et al. (2023)"
+        }
+      ]
+    },
+    {
+      "id": "ptt",
+      "name": "PTT (Partial Trigger Test)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Correlation between prediction scores and attribution assigned to a trigger region across inputs with increasing trigger coverage. Computation: PCC.",
+      "tags": [
+        "I.B",
+        "PCC"
+      ],
+      "references": [
+        {
+          "text": "He et al. (2023)"
+        }
+      ]
+    },
+    {
+      "id": "emt",
+      "name": "EMT (Evolving Model Test)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Correlation between training loss and changes in the features identified as important across epoch checkpoints. Computation: PCC.",
+      "tags": [
+        "I.B",
+        "PCC"
+      ],
+      "references": [
+        {
+          "text": "He et al. (2023)"
+        }
+      ]
+    },
+    {
+      "id": "li-2021-concept-corr",
+      "name": "Concept-importance correlation (Li et al. 2021)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.B — Alignment via statistical measures",
+      "description": "Correlation between concept importance scores and the average prediction drop caused by suppressing each concept. Computation: PCC.",
+      "tags": [
+        "I.B",
+        "PCC"
+      ],
+      "references": [
+        {
+          "text": "Li et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "fidelity-classification",
+      "name": "Fidelity (classification)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.C — Agreement between black-box & explainer predictions",
+      "description": "Percentage of similar predictions between the black-box and explainer models; black-box predicted labels treated as ground truth. Computation: Accuracy score.",
+      "tags": [
+        "I.C",
+        "Accuracy score"
+      ],
+      "references": [
+        {
+          "text": "Zhang et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "fidelity-regression",
+      "name": "Fidelity (regression)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.C — Agreement between black-box & explainer predictions",
+      "description": "Relative error between the black-box and explainer model predictions. Computation: Relative error.",
+      "tags": [
+        "I.C",
+        "Relative error"
+      ],
+      "references": [
+        {
+          "text": "Zhang et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "qi-2021-mae",
+      "name": "MAE agreement (Qi et al. 2021)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.C — Agreement between black-box & explainer predictions",
+      "description": "Mean absolute error between the black-box and explainer model predictions (regression). Computation: MAE.",
+      "tags": [
+        "I.C",
+        "MAE"
+      ],
+      "references": [
+        {
+          "text": "Qi et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "coherence",
+      "name": "Coherence",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.C — Agreement between black-box & explainer predictions",
+      "description": "Strength of the linear relationship between the prediction sequences of the black-box and explainer models; applicable to classification and regression. Computation: Spectral density.",
+      "tags": [
+        "I.C",
+        "Spectral density"
+      ],
+      "references": [
+        {
+          "text": "Akpudo et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "linear-faithfulness-score",
+      "name": "Linear faithfulness score",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.D — Concept scores mapping to predictions",
+      "description": "Logistic-regression classifier trained on concept activation scores to predict the ViT model's outputs. Computation: Accuracy score.",
+      "tags": [
+        "I.D",
+        "Accuracy score"
+      ],
+      "references": [
+        {
+          "text": "Wang et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "cam-gap-decomp",
+      "name": "CAM on 2D CNN + GAP",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.E — Analytical decomposition formulas",
+      "description": "CAM applied to a 2D CNN with a GAP layer before the classifier, satisfying an exact additivity property. Computation: Analytical formula.",
+      "tags": [
+        "I.E",
+        "Analytical formula"
+      ],
+      "references": [
+        {
+          "text": "Zhou et al. (2016)"
+        }
+      ]
+    },
+    {
+      "id": "gradcam-gap-decomp",
+      "name": "Grad-CAM on last conv + GAP",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.E — Analytical decomposition formulas",
+      "description": "Grad-CAM applied to the last convolutional layer of a 2D CNN with a GAP layer before the classifier (reduces to CAM). Computation: Analytical formula.",
+      "tags": [
+        "I.E",
+        "Analytical formula"
+      ],
+      "references": [
+        {
+          "text": "Selvaraju et al. (2017)"
+        }
+      ]
+    },
+    {
+      "id": "hirescam-gap-decomp",
+      "name": "HiResCAM on last conv + GAP",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.E — Analytical decomposition formulas",
+      "description": "HiResCAM applied to the last convolutional layer of a 2D CNN with a GAP layer before the classifier. Computation: Analytical formula.",
+      "tags": [
+        "I.E",
+        "Analytical formula"
+      ],
+      "references": [
+        {
+          "text": "Draelos and Carin (2020)"
+        }
+      ]
+    },
+    {
+      "id": "hirescam-flatten-decomp",
+      "name": "HiResCAM on last conv + Flatten",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.E — Analytical decomposition formulas",
+      "description": "HiResCAM applied to the last convolutional layer of a 2D CNN with a Flatten layer before the classifier (only HiResCAM preserves additivity here). Computation: Analytical formula.",
+      "tags": [
+        "I.E",
+        "Analytical formula"
+      ],
+      "references": [
+        {
+          "text": "Draelos and Carin (2020)"
+        }
+      ]
+    },
+    {
+      "id": "hirescam-axialnet-decomp",
+      "name": "HiResCAM on AxialNet",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.E — Analytical decomposition formulas",
+      "description": "HiResCAM applied to the last convolutional layer of the AxialNet architecture (3D volumes). Computation: Analytical formula.",
+      "tags": [
+        "I.E",
+        "Analytical formula"
+      ],
+      "references": [
+        {
+          "text": "Draelos and Carin (2022)"
+        }
+      ]
+    },
+    {
+      "id": "attlrp-transformer-decomp",
+      "name": "AttLRP on Transformer",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.E — Analytical decomposition formulas",
+      "description": "AttLRP algorithm applied to a Transformer architecture, preserving LRP's conservation principle. Computation: Analytical formula.",
+      "tags": [
+        "I.E",
+        "Analytical formula"
+      ],
+      "references": [
+        {
+          "text": "Achtibat et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "zhou-2018-concept-decomp",
+      "name": "Concept-based decomposition (Zhou et al. 2018)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.E — Analytical decomposition formulas",
+      "description": "Concept-based decomposition applied to a 2D CNN with a GAP layer before the classifier. Computation: Analytical formula.",
+      "tags": [
+        "I.E",
+        "Analytical formula"
+      ],
+      "references": [
+        {
+          "text": "Zhou et al. (2018)"
+        }
+      ]
+    },
+    {
+      "id": "tan-2024-prototype-decomp",
+      "name": "Prototype-based decomposition (Tan et al. 2024)",
+      "category": "I — Combination of attribution scores & black-box predictions",
+      "subcategory": "I.E — Analytical decomposition formulas",
+      "description": "Prototype-based decomposition of the classification head of a part-prototype network, with completeness guarantees. Computation: Analytical formula.",
+      "tags": [
+        "I.E",
+        "Analytical formula"
+      ],
+      "references": [
+        {
+          "text": "Tan et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "max-sensitivity",
+      "name": "Max-Sensitivity",
+      "category": "II — Sensitivity analysis of attribution scores",
+      "subcategory": "II.A — Input perturbation",
+      "description": "Maximum change in attribution maps under bounded input perturbations; lower values indicate more faithful (stable) explanations. Computation: Euclidean norm.",
+      "tags": [
+        "II.A",
+        "Euclidean norm"
+      ],
+      "references": [
+        {
+          "text": "Yeh et al. (2019)"
+        }
+      ]
+    },
+    {
+      "id": "amorim-2023",
+      "name": "Opposite-class patch substitution (Amorim et al. 2023)",
+      "category": "II — Sensitivity analysis of attribution scores",
+      "subcategory": "II.A — Input perturbation",
+      "description": "Salient regions are replaced with patches from opposite-class images; original and perturbed attribution maps are compared. Computation: Similarity/dissimilarity metrics (jAUC, bAUC, sAUC, NSS, IG, SIM, PCC; MAE, MSE, KL).",
+      "tags": [
+        "II.A",
+        "Similarity/dissimilarity metrics (jAUC, bAUC, sAUC, NSS, IG, SIM, PCC; MAE, MSE, KL)"
+      ],
+      "references": [
+        {
+          "text": "Amorim et al. (2023)"
+        }
+      ]
+    },
+    {
+      "id": "dakhli-2024",
+      "name": "Thresholded-occlusion stability (Dakhli & Barhoumi 2024)",
+      "category": "II — Sensitivity analysis of attribution scores",
+      "subcategory": "II.A — Input perturbation",
+      "description": "Low-importance regions are removed using a thresholded attribution mask; original and occluded predictions and maps are compared. Computation: PCC.",
+      "tags": [
+        "II.A",
+        "PCC"
+      ],
+      "references": [
+        {
+          "text": "Dakhli and Barhoumi (2024)"
+        }
+      ]
+    },
+    {
+      "id": "vukadin-2024a-impact-map",
+      "name": "Combined impact map (Vukadin et al. 2024a)",
+      "category": "II — Sensitivity analysis of attribution scores",
+      "subcategory": "II.A — Input perturbation",
+      "description": "Combines MoRF/LeRF masking and gradient–input maps to derive a combined impact map; alignment between attribution and impact map is evaluated. Computation: Element-wise map product and sum over map dimensions.",
+      "tags": [
+        "II.A",
+        "Element-wise map product and sum over map dimensions"
+      ],
+      "references": [
+        {
+          "text": "Vukadin et al. (2024a)"
+        }
+      ]
+    },
+    {
+      "id": "mprt",
+      "name": "MPRT (Model Parameter Randomization Test)",
+      "category": "II — Sensitivity analysis of attribution scores",
+      "subcategory": "II.B — Model weights perturbation",
+      "description": "Attribution maps are recomputed after randomizing model weights and compared with the originals via similarity metrics. Computation: SRCC, SSIM, PCC of HOGs.",
+      "tags": [
+        "II.B",
+        "SRCC, SSIM, PCC of HOGs"
+      ],
+      "references": [
+        {
+          "text": "Adebayo et al. (2018)"
+        }
+      ]
+    },
+    {
+      "id": "smprt",
+      "name": "sMPRT (Smooth MPRT)",
+      "category": "II — Sensitivity analysis of attribution scores",
+      "subcategory": "II.B — Model weights perturbation",
+      "description": "MPRT refinement using denoised attribution maps averaged over Gaussian-perturbed input instances. Computation: SSIM.",
+      "tags": [
+        "II.B",
+        "SSIM"
+      ],
+      "references": [
+        {
+          "text": "Hedström et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "emprt",
+      "name": "eMPRT (Efficient MPRT)",
+      "category": "II — Sensitivity analysis of attribution scores",
+      "subcategory": "II.B — Model weights perturbation",
+      "description": "MPRT refinement using full model randomization and entropy-based comparison of attribution maps. Computation: Relative change in entropy.",
+      "tags": [
+        "II.B",
+        "Relative change in entropy"
+      ],
+      "references": [
+        {
+          "text": "Hedström et al. (2024)"
+        }
+      ]
+    },
+    {
+      "id": "csc",
+      "name": "CSC (Cosine Similarity Convergence)",
+      "category": "II — Sensitivity analysis of attribution scores",
+      "subcategory": "II.C — Attribution score perturbation",
+      "description": "Different random initial relevance vectors are backpropagated through the network and the resulting relevance flows are compared. Computation: Cosine similarity.",
+      "tags": [
+        "II.C",
+        "Cosine similarity"
+      ],
+      "references": [
+        {
+          "text": "Sixt et al. (2020)"
+        }
+      ]
+    },
+    {
+      "id": "pointing-game",
+      "name": "Pointing Game",
+      "category": "III — Spatial alignment against ground-truth region",
+      "subcategory": "",
+      "description": "Checks whether the most important pixels fall inside the human-annotated image region. Computation: Number of hits over total pixels checked.",
+      "tags": [
+        "III",
+        "Number of hits over total pixels checked"
+      ],
+      "references": [
+        {
+          "text": "Zhang et al. (2018)"
+        }
+      ]
+    },
+    {
+      "id": "gridpg",
+      "name": "GridPG",
+      "category": "III — Spatial alignment against ground-truth region",
+      "subcategory": "",
+      "description": "Evaluates whether attribution highlights the correct image cell in a grid of images. Computation: Positive attribution mass in target cell over total positive attribution.",
+      "tags": [
+        "III",
+        "Positive attribution mass in target cell over total positive attribution"
+      ],
+      "references": [
+        {
+          "text": "Bohle et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "difull",
+      "name": "DiFull",
+      "category": "III — Spatial alignment against ground-truth region",
+      "subcategory": "",
+      "description": "GridPG improvement designed so each grid cell influences only the logit of its own class. Computation: Positive attribution mass in target cell over total positive attribution.",
+      "tags": [
+        "III",
+        "Positive attribution mass in target cell over total positive attribution"
+      ],
+      "references": [
+        {
+          "text": "Rao et al. (2022)"
+        }
+      ]
+    },
+    {
+      "id": "dipart",
+      "name": "DiPart",
+      "category": "III — Spatial alignment against ground-truth region",
+      "subcategory": "",
+      "description": "Intermediate between GridPG and DiFull: partial disconnection of grid cells. Computation: Positive attribution mass in target cell over total positive attribution.",
+      "tags": [
+        "III",
+        "Positive attribution mass in target cell over total positive attribution"
+      ],
+      "references": [
+        {
+          "text": "Rao et al. (2022)"
+        }
+      ]
+    },
+    {
+      "id": "attribute-aprf",
+      "name": "Attribute-Accuracy / Precision / Recall / F1",
+      "category": "III — Spatial alignment against ground-truth region",
+      "subcategory": "",
+      "description": "Classification metrics extended to attribution maps; evaluate whether attribution highlights the target-class cells in a grid of images. Computation: TP, FP, TN, FN classification scores.",
+      "tags": [
+        "III",
+        "TP, FP, TN, FN classification scores"
+      ],
+      "references": [
+        {
+          "text": "Arias-Duart et al. (2023)"
+        }
+      ]
+    },
+    {
+      "id": "lime",
+      "name": "LIME",
+      "category": "IV — Built-in faithfulness objective",
+      "subcategory": "",
+      "description": "Explains individual predictions by generating perturbed superpixel samples around the input and fitting a simple interpretable surrogate model. Computation: Local approximation with an interpretable surrogate model.",
+      "tags": [
+        "IV",
+        "Local approximation with an interpretable surrogate model"
+      ],
+      "references": [
+        {
+          "text": "Ribeiro et al. (2016)"
+        }
+      ]
+    },
+    {
+      "id": "unravel",
+      "name": "UnRAvEL",
+      "category": "IV — Built-in faithfulness objective",
+      "subcategory": "",
+      "description": "Builds on LIME using a Gaussian Process Regression surrogate and a Faithful Uncertainty Reduction (FUR) acquisition function. Computation: Local approximation with an interpretable surrogate model.",
+      "tags": [
+        "IV",
+        "Local approximation with an interpretable surrogate model"
+      ],
+      "references": [
+        {
+          "text": "Saini and Prasad (2022)"
+        }
+      ]
+    },
+    {
+      "id": "fdbx",
+      "name": "FDbX",
+      "category": "IV — Built-in faithfulness objective",
+      "subcategory": "",
+      "description": "Extends the LIME rationale to Siamese networks: explains similarity predictions by constructing a bipartite graph of superpixels and fitting a Ridge regression surrogate. Computation: Local approximation with an interpretable surrogate model.",
+      "tags": [
+        "IV",
+        "Local approximation with an interpretable surrogate model"
+      ],
+      "references": [
+        {
+          "text": "Saleem et al. (2025)"
+        }
+      ]
+    },
+    {
+      "id": "xnn",
+      "name": "XNN (Qi et al. 2021)",
+      "category": "IV — Built-in faithfulness objective",
+      "subcategory": "",
+      "description": "Explanation Neural Network that learns a low-dimensional explanation space able to mimic the black-box predictions. Computation: Dedicated loss term in the explainer model.",
+      "tags": [
+        "IV",
+        "Dedicated loss term in the explainer model"
+      ],
+      "references": [
+        {
+          "text": "Qi et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "pace",
+      "name": "PACE",
+      "category": "IV — Built-in faithfulness objective",
+      "subcategory": "",
+      "description": "Explainer model that learns concept relevance scores based on the prediction-probability drop caused by removing each concept. Computation: Dedicated loss term in the explainer model.",
+      "tags": [
+        "IV",
+        "Dedicated loss term in the explainer model"
+      ],
+      "references": [
+        {
+          "text": "Kamakshi et al. (2021)"
+        }
+      ]
+    },
+    {
+      "id": "jmm",
+      "name": "JMM (Joint Mask Method)",
+      "category": "IV — Built-in faithfulness objective",
+      "subcategory": "",
+      "description": "Mask-based attribution method that jointly optimizes preservation and deletion masks. Computation: Optimization objective of the method.",
+      "tags": [
+        "IV",
+        "Optimization objective of the method"
+      ],
+      "references": [
+        {
+          "text": "Jung et al. (2021)"
+        }
+      ]
+    }
+  ]
 }
