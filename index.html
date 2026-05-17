@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faithfulness Evaluation Methods in Imaging XAI — Taxonomy</title>
+  <meta name="description" content="Interactive taxonomy of faithfulness evaluation methods in imaging explainable AI. Companion site to Lamprou et al. (2025)." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Faithfulness Evaluation Methods in Imaging XAI</h1>
+    <p class="subtitle">
+      An interactive taxonomy &mdash; companion site to
+      <span class="cite">Lamprou et al. (2025)</span>.
+    </p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Filters">
+      <input
+        id="search"
+        type="search"
+        placeholder="Search methods, descriptions, tags&hellip;"
+        autocomplete="off"
+        aria-label="Search methods"
+      />
+      <select id="category-filter" aria-label="Filter by category">
+        <option value="">All categories</option>
+      </select>
+      <span id="count" class="count" aria-live="polite"></span>
+    </section>
+
+    <section id="results" aria-label="Methods"></section>
+
+    <section id="empty-state" class="empty-state" hidden>
+      <h2>No taxonomy data loaded yet</h2>
+      <p>
+        <code>taxonomy.json</code> currently contains an empty dataset. Add
+        method entries to populate this site &mdash; the expected schema is
+        documented in the project <a href="https://github.com/nasskall/xai-faithfulness-taxonomy#data-schema">README</a>.
+      </p>
+    </section>
+
+    <section id="error-state" class="error-state" hidden>
+      <h2>Could not load taxonomy data</h2>
+      <p id="error-detail"></p>
+      <p class="hint">
+        If you are previewing locally by opening the file directly, browsers
+        block <code>fetch()</code> of local JSON. Serve the folder over HTTP
+        instead (e.g. <code>python -m http.server</code>).
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Built as a static site &middot; deployed via GitHub Pages.
+      Data and methodology: see Lamprou et al. (2025).
+    </p>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

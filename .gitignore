@@ -1,0 +1,19 @@
+# JetBrains / PyCharm
+.idea/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / temp
+*.swp
+*~
+.vscode/
+
+# Logs
+*.log
+
+# Local static-server / tooling artifacts
+.cache/
+node_modules/
