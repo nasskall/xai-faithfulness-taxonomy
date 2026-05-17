@@ -1,11 +1,11 @@
 # xai-faithfulness-taxonomy
 
 Interactive taxonomy of faithfulness evaluation methods in imaging explainable
-AI (XAI) — companion site to **Lamprou et al. (2025)**.
+AI (XAI) — companion site to **Lamprou et al. (2026)**.
 
 > ⚠️ **Data status:** this site currently ships with an **empty dataset**
 > (`taxonomy.json` has `"methods": []`). The 68 methods and the full
-> bibliographic reference for Lamprou et al. (2025) are to be supplied by the
+> bibliographic reference for Lamprou et al. (2026) are to be supplied by the
 > maintainer. Until then the live site shows a "no data loaded yet"
 > placeholder. None of the taxonomy content has been auto-generated.
 
@@ -31,7 +31,7 @@ Pages.
 ```json
 {
   "title": "Faithfulness Evaluation Methods in Imaging XAI",
-  "source": "Companion site to Lamprou et al. (2025).",
+  "source": "Companion site to Lamprou et al. (2026).",
   "version": "0.1.0",
   "methods": [
     {
@@ -93,4 +93,4 @@ Code is released under the [MIT License](./LICENSE). Update the copyright
 holder in `LICENSE` if it should credit the paper's authors or institution
 rather than the repository maintainer. Note that the MIT license covers the
 **site code**; licensing of the taxonomy/research content should follow the
-terms of Lamprou et al. (2025).
+terms of Lamprou et al. (2026).
