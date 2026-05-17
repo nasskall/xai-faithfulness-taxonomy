@@ -158,3 +158,41 @@ main,
 }
 
 a { color: var(--accent); }
+
+#overview {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+#overview h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  border: 0;
+}
+
+#category-chart svg {
+  display: block;
+  max-width: 560px;
+}
+
+.bar {
+  fill: var(--accent);
+  transition: fill 0.15s ease;
+}
+
+.bar-row:hover .bar {
+  fill: #7ab0ff;
+}
+
+.bar-label {
+  fill: var(--text);
+  font: 600 15px system-ui, sans-serif;
+}
+
+.bar-value {
+  fill: var(--text-dim);
+  font: 14px system-ui, sans-serif;
+}

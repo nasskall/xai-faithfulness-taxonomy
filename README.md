@@ -74,6 +74,23 @@ each method are **not** reproduced here — they remain authoritative in the
 paper's tables. `taxonomy.csv` is a flat export of the same 68 rows for
 spreadsheet users; it is kept in sync with the JSON and is not read by the site.
 
+## Visualizations
+
+Distribution of the 68 methods across the four top-level categories (rendered
+natively by GitHub):
+
+```mermaid
+pie showData
+    title Methods per category (n = 68)
+    "I — Combination w/ black-box predictions" : 49
+    "II — Sensitivity analysis" : 8
+    "III — Spatial alignment vs ground truth" : 5
+    "IV — Built-in faithfulness objective" : 6
+```
+
+The interactive site shows this same breakdown as a bar chart at the top of the
+page.
+
 ## Project layout
 
 | File | Purpose |

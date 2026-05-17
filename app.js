@@ -10,6 +10,8 @@ const els = {
   empty: document.getElementById("empty-state"),
   error: document.getElementById("error-state"),
   errorDetail: document.getElementById("error-detail"),
+  overview: document.getElementById("overview"),
+  categoryChart: document.getElementById("category-chart"),
 };
 
 let allMethods = [];
@@ -102,6 +104,45 @@ function render() {
   }
 }
 
+function renderCategoryChart(methods) {
+  const counts = new Map();
+  for (const m of methods) {
+    counts.set(m.category, (counts.get(m.category) || 0) + 1);
+  }
+  const rows = [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  const max = Math.max(...rows.map(([, n]) => n), 1);
+
+  const W = 600;
+  const rowH = 44;
+  const gap = 12;
+  const pad = 8;
+  const left = 60; // gutter for the roman-numeral label
+  const right = 44; // room for the value text
+  const barMax = W - left - right;
+  const H = pad * 2 + rows.length * rowH + (rows.length - 1) * gap;
+
+  const bars = rows
+    .map(([cat, n], i) => {
+      const y = pad + i * (rowH + gap);
+      const cy = y + rowH / 2;
+      const w = Math.max((n / max) * barMax, 2);
+      const short = escapeHtml(cat.split(" ")[0]);
+      return `<g class="bar-row">
+        <title>${escapeHtml(cat)}: ${n} methods</title>
+        <text class="bar-label" x="0" y="${cy}" dominant-baseline="middle">${short}</text>
+        <rect class="bar" x="${left}" y="${y}" width="${w.toFixed(1)}" height="${rowH}" rx="5"></rect>
+        <text class="bar-value" x="${(left + w + 6).toFixed(1)}" y="${cy}" dominant-baseline="middle">${n}</text>
+      </g>`;
+    })
+    .join("");
+
+  const summary = rows
+    .map(([c, n]) => `${c.split(" ")[0]}=${n}`)
+    .join(", ");
+
+  els.categoryChart.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMinYMin meet" role="img" aria-label="Methods per category — ${summary} (total ${methods.length})">${bars}</svg>`;
+}
+
 function populateCategoryFilter(methods) {
   for (const cat of categoriesOf(methods)) {
     const opt = document.createElement("option");
@@ -122,6 +163,8 @@ async function init() {
       return;
     }
 
+    renderCategoryChart(allMethods);
+    els.overview.hidden = false;
     populateCategoryFilter(allMethods);
     els.search.addEventListener("input", render);
     els.categoryFilter.addEventListener("change", render);
