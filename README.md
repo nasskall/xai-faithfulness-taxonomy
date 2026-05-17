@@ -32,7 +32,7 @@ Dimitris Askounis¹
 - ¹ Decision Support Systems Laboratory, National Technical University of
   Athens, 9 Iroon Polytechniou str., 15780, Zografou, Athens, Greece
 - ² Department of Digital Systems, University of Piraeus, 18534 Piraeus, Greece
-- \* Correspondence: `vlamprou@iepu.ntua.gr`
+- \* Correspondence: `vlamprou@epu.ntua.gr`
 
 **Summary.** Faithfulness is one of the most widely used properties for
 evaluating explanation quality in XAI, but it is not uniformly conceptualized
