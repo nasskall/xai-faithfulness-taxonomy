@@ -106,18 +106,18 @@ page.
 ```json
 {
   "title": "Faithfulness Evaluation Methods in Imaging XAI",
-  "source": "Data transcribed from Tables 1-11 of Lamprou, Kallipolitis, Ntanos & Askounis (2026) ...",
-  "version": "1.0.0",
+  "source": "Data transcribed from Tables 1-11 of Lamprou, Kallipolitis, Ntanos & Askounis (2026) — 107 review studies, 68 methods, 4 categories ...",
+  "version": "1.1.0",
   "methods": [
     {
       "id": "kebab-case-unique-id",
       "name": "Method name",
       "category": "Top-level category",
       "subcategory": "Finer grouping (may be empty)",
-      "description": "One- or two-sentence summary.",
+      "description": "One- or two-sentence summary. Computation: <type>.",
       "tags": ["subcategory-code", "computation-type"],
       "references": [
-        { "text": "Author et al. (Year)", "url": "https://doi.org/... (optional)" }
+        { "text": "Author et al. (Year)", "url": "https://doi.org/10.xxxx/..." }
       ]
     }
   ]
@@ -127,10 +127,15 @@ page.
 Field notes:
 
 - `id`, `name`, `category`, `description` are present on every entry.
-- `subcategory`, `tags`, `references` are optional (`references[].url` is
-  optional within a reference; the current data has no URLs).
+- `subcategory`, `tags`, `references` are optional. `references[].url` is
+  schema-optional but **populated for all 68 methods** in the current data: an
+  arXiv link where the paper prints an arXiv id, otherwise a Crossref-verified
+  DOI, otherwise a Google Scholar title-search link.
 - Categories shown on the site are derived automatically from each method's
   `category` value — no separate category list to maintain.
+
+The current dataset is `version` **1.1.0**. `taxonomy.csv` mirrors the same
+rows; its `references` cell uses the form `Author et al. (Year) <url>`.
 
 ## Local preview
 
