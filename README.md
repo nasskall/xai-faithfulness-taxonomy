@@ -19,8 +19,7 @@ search and category filtering.
 
 ## The paper
 
-**A Taxonomy of Faithfulness Evaluation Methods in Imaging XAI: A Systematic
-Review** (2026).
+**A Taxonomy of Faithfulness Evaluation Methods for Post-hoc Attribution Maps in Imaging XAI: A Systematic Review** (2026).
 
 **Authors:** Vangelis Lamprou¹\*, Athanasios Kallipolitis², Christos Ntanos¹,
 Dimitris Askounis¹
