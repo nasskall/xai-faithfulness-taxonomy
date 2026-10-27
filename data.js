@@ -1,4 +1,4 @@
-// data.js – loads and normalizes the taxonomy dataset.
+// data.js - loads and normalizes the taxonomy dataset.
 //
 // Single source of truth is taxonomy.json. taxonomy.csv is a flat export
 // kept in sync for users who prefer spreadsheets; it is NOT read by the site.

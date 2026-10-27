@@ -20,7 +20,7 @@ employ it, and the table of the paper where it is listed.
 > Free plan Pages only serves **public** repositories, so the live URL works as
 > long as this repository stays public; if it is made private again the URL
 > returns 404 until it is public once more. You can always run it locally
-> regardless of visibility – see [Local preview](#local-preview).
+> regardless of visibility - see [Local preview](#local-preview).
 
 ## The paper
 
@@ -79,7 +79,7 @@ maps; post-hoc; systematic review; imaging data; taxonomy
 
 ## Data
 
-`taxonomy.json` contains all **68 methods**, transcribed from **Tables 2–13**
+`taxonomy.json` contains all **68 methods**, transcribed from **Tables 2-13**
 of the paper. Distribution:
 
 | Group | Category / sub-category | Paper table | Methods |
@@ -106,7 +106,7 @@ For every method the dataset records:
 
 Taking the union of `review_studies[]` per group reproduces the study counts of
 Table 1 of the paper (94, 13 and 5; 107 overall), and per paper table (Tables
-2–10) the study counts of Table 14.
+2-10) the study counts of Table 14.
 
 `taxonomy.csv` is a flat export of the same 68 rows for spreadsheet users; it
 is kept in sync with the JSON and is not read by the site. List-valued cells

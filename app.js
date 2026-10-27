@@ -1,4 +1,4 @@
-// app.js – renders the interactive taxonomy and wires up search/filters.
+// app.js - renders the interactive taxonomy and wires up search/filters.
 
 import { loadTaxonomy, categoriesOf, groupsOf } from "./data.js";
 
