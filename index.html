@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Faithfulness Evaluation Methods in Imaging XAI — Taxonomy</title>
-  <meta name="description" content="Interactive taxonomy of faithfulness evaluation methods in imaging explainable AI. Companion site to Lamprou et al. (2026)." />
+  <title>Faithfulness Evaluation Methods in Imaging XAI – Taxonomy</title>
+  <meta name="description" content="Interactive classification of faithfulness methods for post-hoc attribution maps in imaging explainable AI: taxonomy of evaluation methods, faithfulness-by-design and plausibility-adjacent methods. Companion site to Lamprou et al. (2026)." />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header class="site-header">
     <h1>Faithfulness Evaluation Methods in Imaging XAI</h1>
     <p class="subtitle">
-      An interactive taxonomy &mdash; companion site to
+      68 methods identified in 107 studies: a taxonomy of 50 faithfulness
+      evaluation methods, 14 faithfulness-by-design attribution methods and
+      4 plausibility-adjacent methods. Companion site to
       <span class="cite">Lamprou et al. (2026)</span>.
     </p>
   </header>
@@ -25,6 +27,9 @@
         autocomplete="off"
         aria-label="Search methods"
       />
+      <select id="group-filter" aria-label="Filter by group">
+        <option value="">All groups</option>
+      </select>
       <select id="category-filter" aria-label="Filter by category">
         <option value="">All categories</option>
       </select>
@@ -32,7 +37,7 @@
     </section>
 
     <section id="overview" hidden>
-      <h2>Methods per category</h2>
+      <h2>Methods per category and group</h2>
       <div id="category-chart"></div>
     </section>
 
@@ -42,7 +47,7 @@
       <h2>No taxonomy data loaded yet</h2>
       <p>
         <code>taxonomy.json</code> currently contains an empty dataset. Add
-        method entries to populate this site &mdash; the expected schema is
+        method entries to populate this site &ndash; the expected schema is
         documented in the project <a href="https://github.com/nasskall/xai-faithfulness-taxonomy#data-schema">README</a>.
       </p>
     </section>

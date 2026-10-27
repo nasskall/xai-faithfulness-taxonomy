@@ -47,6 +47,7 @@ main,
 }
 
 #search,
+#group-filter,
 #category-filter {
   background: var(--surface);
   color: var(--text);
@@ -61,7 +62,15 @@ main,
   min-width: 0;
 }
 
+#group-filter,
+#category-filter {
+  max-width: 100%;
+  min-width: 0;
+  text-overflow: ellipsis;
+}
+
 #search:focus,
+#group-filter:focus,
 #category-filter:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
@@ -73,13 +82,22 @@ main,
   margin-left: auto;
 }
 
+.group-block { margin-bottom: 2.5rem; }
+
+.group-title {
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.4rem;
+  margin: 0 0 1.25rem;
+}
+
 .category-group { margin-bottom: 2rem; }
 
-.category-group h2 {
-  font-size: 1.15rem;
+.category-title {
+  font-size: 1.05rem;
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.35rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
 }
 
 .cards {
@@ -131,6 +149,28 @@ main,
 .refs li { color: var(--text-dim); }
 .refs a { color: var(--accent); }
 
+.studies {
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.studies summary {
+  cursor: pointer;
+  color: var(--text);
+}
+
+.studies ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.source {
+  margin: 0.6rem 0 0;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
 .empty-state,
 .error-state {
   background: var(--surface);
@@ -180,12 +220,36 @@ a { color: var(--accent); }
 
 .bar {
   fill: var(--accent);
-  transition: fill 0.15s ease;
+  transition: opacity 0.15s ease;
 }
 
-.bar-row:hover .bar {
-  fill: #7ab0ff;
+.bar-g0 { fill: #5b9dff; background: #5b9dff; }
+.bar-g1 { fill: #3fb68b; background: #3fb68b; }
+.bar-g2 { fill: #e0a43a; background: #e0a43a; }
+
+.bar-row:hover .bar { opacity: 0.8; }
+
+.legend {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
 }
+
+.swatch {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+  vertical-align: -0.1rem;
+}
+
+.chart-key { margin: 0.5rem 0 0; }
 
 .bar-label {
   fill: var(--text);
