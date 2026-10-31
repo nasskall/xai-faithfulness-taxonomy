@@ -393,10 +393,10 @@
       "group": "Faithfulness evaluation methods",
       "category": "I - Combination of attribution scores and black-box predictions",
       "subcategory": "I.A.1 - Multi-step prediction metrics",
-      "description": "AOPC variant that retrains the model on explanation-guided modified images to address the OOD issue. Computation: AOPC.",
+      "description": "Retrains the model on explanation-guided modified images to address the OOD issue. Computation: Accuracy score comparison.",
       "tags": [
         "I.A.1",
-        "AOPC"
+        "Accuracy score comparison"
       ],
       "references": [
         {
@@ -417,10 +417,10 @@
       "group": "Faithfulness evaluation methods",
       "category": "I - Combination of attribution scores and black-box predictions",
       "subcategory": "I.A.1 - Multi-step prediction metrics",
-      "description": "AOPC variant employing Noisy Linear Imputation (NLI) perturbations to mitigate class information leakage. Computation: AOPC.",
+      "description": "Employs Noisy Linear Imputation (NLI) perturbations to mitigate class information leakage. Computation: Accuracy score comparison.",
       "tags": [
         "I.A.1",
-        "AOPC"
+        "Accuracy score comparison"
       ],
       "references": [
         {
